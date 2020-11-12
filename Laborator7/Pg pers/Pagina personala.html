@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Maries Diana</title>
+<style>
+body {
+  background-color: #A2D9CE ;
+}
+h1 {
+  color:#3949AB;
+  text-align: center;
+  font-family:"Comic Sans MS", cursive, sans-serif;
+}
+img {
+  border-radius: 20%;
+  width:200px;
+  height"200px;
+  opacity: 0.2;
+}
+p{
+  color:#CC0099;
+font-family:"Comic Sans MS", cursive, sans-serif;
+  font-size: 20px;
+}
+table, td {
+ background-color:#17A589 ;
+  border: 1px solid black;
+}
+td {
+ color:#F4ECF7 ;
+ font-family:"Comic Sans MS", cursive, sans-serif;
+}
+ul {
+ border: 1px solid black;
+  background-color:#17A589 ;
+  color:#F4ECF7 ;
+  font-family:"Comic Sans MS", cursive, sans-serif;
+}
+a{
+color:#FFCDD2
+font-family:"Comic Sans MS", cursive, sans-serif; ;
+}
+</style>
+
+<script>
+function viitor() {
+document.getElementById("nume").innerHTML = "Inginer Maries Diana";
+document.getElementById("nume").style.color = "#26C6DA";
+document.body.style.backgroundColor="#FFEBEE";
+document.getElementById("tabel").style.backgroundColor = "#F06292";
+document.getElementById("poza").src="img2.JPG";
+document.getElementById("poza").style.opacity='0.8';
+document.getElementById("materii").innerHTML = "Ralizari";
+document.getElementById("materii").style.color = "#26C6DA";
+
+ var x = document.getElementById("tabel");
+ x.rows[0].cells[0].innerHTML="Din punct de vedere social";
+ x.rows[0].cells[1].innerHTML="Invatat munca in echipa; Fcacut prieteni";
+  x.rows[1].cells[0].innerHTML="Din punct de vedere profesional";
+  x.rows[1].cells[1].innerHTML="Inginer la o firma mare";
+    x.rows[2].cells[0].innerHTML="Realizari generale";
+	  x.rows[2].cells[1].innerHTML="Am invatat sa imi organizez timpul; Am descoperit pasiuni noi";
+  
+}
+function varsta(){
+var a= new Date;
+var v,nastere,curent;
+nastere =document.getElementById("ani").innerHTML;
+curent =a.getFullYear();
+v=curent-parseInt(nastere);
+document.getElementById("ani").innerHTML =v;
+
+}
+</script>
+
+
+</head>
+<body>
+
+<h1 id="nume" >Maries Diana</h1>
+<img id="poza" src="img1.jpg" alt="*Poza cu mine*">
+<p id="ani" onmouseover="varsta()" >2001</p>
+<h1 id="materii">Materii preferate</h1>
+<table id="tabel" style="width:100%">
+  <tr>
+    <td>Analiză matematică</th>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/01.pdf"> Fisa disciplinei</a></th>
+    
+  </tr>
+  <tr>
+    <td>Programarea calculatoarelor</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/04.pdf"> Fisa disciplinei</a></td>
+  </tr>
+  <tr>
+    <td>Sport 1</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/07.pdf"> Fisa disciplinei</a></td>
+  </tr>
+</table>
+<h1>Pasiuni</h1>
+<ul>
+  <li>Pictura</li>
+  <li>Mersul cu bicicleta</li>
+  <li>Drumetii</li>
+  <li>Jocurile de societate</li>
+</ul>
+<button type="button" onclick="viitor()">Vezi viitorul</button>
+<p>Asteptarile mele legate de educatie sunt sa ma angajez si sa imi deschid orizontul cu privire la oportunitatiile in viata. Si sa imi placa ce invat.</p>
+<p>diana.bluex72@gmail.com</p>
+</body>
+</html>
